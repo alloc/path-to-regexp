@@ -1,13 +1,12 @@
 {
-  "extends": "@borderless/ts-scripts/configs/tsconfig.json",
+  "include": ["src"],
   "compilerOptions": {
-    "target": "ES2015",
-    "lib": ["ES2015"],
-    "rootDir": "src",
-    "outDir": "dist",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["node"]
-  },
-  "include": ["src/**/*"]
+    "target": "es2015",
+    "lib": ["es2015"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true
+  }
 }
