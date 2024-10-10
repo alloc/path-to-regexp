@@ -269,10 +269,6 @@ export type Token = Text | Parameter | Wildcard | Group;
  */
 export class TokenData {
   constructor(public readonly tokens: Token[]) {}
-
-  toFunction(delimiter?: string, encode?: Encode | false) {
-    return tokensToFunction(this.tokens, delimiter, encode);
-  }
 }
 
 /**
